@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "@shaharmor/eslint-config"
+  ],
+  "env": {
+    "browser": true,
+    "mocha": true
+  }
+}

@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "main": "dist/app.js",
   "types": "dist/app.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "webpack",
     "clean": "rm -rf ./coverage ./dist",

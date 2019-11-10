@@ -1,11 +1,25 @@
 {
   "name": "@shaharmor/browser-module-boilerplate",
   "version": "0.0.0",
-  "main": "dist/app.js",
-  "types": "dist/app.d.ts",
+  "description": "browser-module-boilerplate",
+  "keywords": [],
+  "homepage": "https://github.com/shaharmor/browser-module-boilerplate",
+  "bugs": {
+    "url": "https://github.com/shaharmor/browser-module-boilerplate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaharmor/browser-module-boilerplate.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Shahar Mor"
+  },
   "files": [
     "dist/**/*"
   ],
+  "main": "dist/app.js",
+  "types": "dist/app.d.ts",
   "scripts": {
     "build": "webpack",
     "clean": "rm -rf ./coverage ./dist",
@@ -52,6 +66,7 @@
     "mocha": "6.2.2",
     "prettier": "1.18.2",
     "sinon": "7.5.0",
+    "sort-package-json": "1.23.1",
     "ts-loader": "6.2.1",
     "ts-node": "8.4.1",
     "tsconfig-paths": "3.9.0",

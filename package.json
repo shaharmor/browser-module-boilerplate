@@ -46,7 +46,7 @@
     "@types/mocha": "5.2.7",
     "@types/node": "12.12.7",
     "@types/sinon": "7.5.0",
-    "@types/webpack": "4.39.8",
+    "@types/webpack": "4.41.0",
     "@types/webpack-dev-server": "3.4.0",
     "@typescript-eslint/eslint-plugin": "2.7.0",
     "eslint": "6.6.0",

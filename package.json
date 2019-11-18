@@ -39,7 +39,7 @@
     "@commitlint/cli": "8.2.0",
     "@shaharmor/commitlint-config": "0.0.2",
     "@shaharmor/eslint-config": "1.2.1",
-    "@shaharmor/prettier-config": "1.0.1",
+    "@shaharmor/prettier-config": "1.1.1",
     "@shaharmor/tsconfig": "0.0.4",
     "@types/eventemitter3": "2.0.2",
     "@types/expect": "24.3.0",

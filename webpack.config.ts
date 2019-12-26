@@ -13,9 +13,9 @@ const config: webpack.Configuration & { devServer: WebpackDevServerConfiguration
   devtool: __DEV__ ? 'inline-source-map' : 'hidden-source-map',
   entry: './src/entry.ts',
   output: {
-    filename: 'app.js',
+    filename: 'entry.js',
     path: resolve(__dirname, 'dist'),
-    library: 'app',
+    library: 'main',
     libraryTarget: 'umd',
     devtoolNamespace: '', // for making links clickable in WebStorm Karma
   },

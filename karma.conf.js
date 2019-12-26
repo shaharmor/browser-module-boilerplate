@@ -5,10 +5,7 @@ delete webpackConfig.entry;
 module.exports = (config) => {
   config.set({
     frameworks: ['mocha'],
-    files: [
-      'src/**/*.test.ts',
-      // 'public/karma/*'
-    ],
+    files: ['src/**/*.test.ts'],
     preprocessors: {
       '**/*.test.ts': ['webpack', 'sourcemap'],
     },

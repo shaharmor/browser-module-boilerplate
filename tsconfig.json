@@ -7,7 +7,6 @@
     "outDir": "dist",
     "target": "es6",
     "lib": ["es6", "dom"],
-    "types": ["mocha", "node"],
     "paths": {
       "@/*": ["src/*"]
     }

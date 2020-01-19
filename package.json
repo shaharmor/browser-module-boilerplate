@@ -25,12 +25,11 @@
     "clean": "rm -rf ./coverage ./dist",
     "dev": "NODE_ENV=development webpack-dev-server",
     "lint": "npm run lint:tsc && npm run lint:eslint",
-    "lint:all": "npm run all -- run lint",
     "lint:eslint": "npm run lint:eslint:glob -- '**/*.{js,ts}'",
     "lint:eslint:glob": "eslint --max-warnings 0",
     "lint:tsc": "tsc -p tsconfig.json --noEmit",
     "prepublish": "npm run build",
-    "reformat": "npm run reformat:glob -- '**/*.{js,json,ts}'",
+    "reformat": "npm run reformat:glob -- '**/*.{js,ts}'",
     "reformat:glob": "prettier --write",
     "test": "NODE_ENV=development jest",
     "test:watch": "npm run test -- '--watch'"

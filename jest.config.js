@@ -9,7 +9,6 @@ const jestPuppeteerPreset = require('jest-puppeteer/jest-preset');
 
 module.exports = mergeOptions(
   {
-    // moduleFileExtensions: ['ts', 'js', 'json', 'node'],
     moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
   },
   jestTSJestPreset,

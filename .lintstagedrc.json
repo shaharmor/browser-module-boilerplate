@@ -1,4 +1,4 @@
 {
-  "*.ts": ["npm run reformat:glob", "npm run lint:eslint:glob"],
+  "*.ts": ["npm run lint:eslint:glob"],
   "package.json": ["sort-package-json"]
 }

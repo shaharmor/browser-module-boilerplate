@@ -1,12 +1,10 @@
 import { resolve } from 'path';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { TsconfigPathsPlugin } from 'tsconfig-paths-webpack-plugin';
 import webpack from 'webpack';
 import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
 
 // eslint-disable-next-line no-underscore-dangle
 const __DEV__ = process.env.NODE_ENV === 'development';
-const ROOT_DIR = resolve(__dirname, 'src');
 
 const config: webpack.Configuration & { devServer: WebpackDevServerConfiguration } = {
   mode: __DEV__ ? 'development' : 'production',
@@ -21,11 +19,11 @@ const config: webpack.Configuration & { devServer: WebpackDevServerConfiguration
   },
   resolve: {
     extensions: ['.ts', '.js'],
-    modules: [ROOT_DIR, 'node_modules'],
-    alias: {
-      '@': ROOT_DIR,
-    },
-    plugins: [new TsconfigPathsPlugin()],
+    plugins: [
+      new TsconfigPathsPlugin({
+        configFile: 'tsconfig.build.json',
+      }),
+    ],
   },
   module: {
     rules: [
@@ -33,8 +31,7 @@ const config: webpack.Configuration & { devServer: WebpackDevServerConfiguration
         test: /\.ts$/,
         loader: 'ts-loader',
         options: {
-          // ignore errors on test files to speed development - will be picked up by linting later
-          reportFiles: ['!src/**/*.test.ts'],
+          configFile: 'tsconfig.build.json',
         },
       },
     ],

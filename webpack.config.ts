@@ -2,6 +2,7 @@ import { resolve } from 'path';
 import { TsconfigPathsPlugin } from 'tsconfig-paths-webpack-plugin';
 import webpack from 'webpack';
 import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 // eslint-disable-next-line no-underscore-dangle
 const __DEV__ = process.env.NODE_ENV === 'development';
@@ -42,9 +43,12 @@ const config: webpack.Configuration & { devServer: WebpackDevServerConfiguration
       exclude: [/node_modules/],
       test: /\.ts($|\?)/i,
     }),
+    new HtmlWebpackPlugin({
+      title: '',
+      template: 'src/assets/index.ejs',
+    }),
   ],
   devServer: {
-    contentBase: resolve(__dirname, 'public'),
     compress: true,
     port: 9000,
     open: true,

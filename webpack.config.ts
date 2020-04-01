@@ -16,7 +16,7 @@ const config: webpack.Configuration & { devServer: WebpackDevServerConfiguration
     path: resolve(__dirname, 'dist'),
     library: 'main',
     libraryTarget: 'umd',
-    devtoolNamespace: '', // for making links clickable in WebStorm Karma
+    devtoolNamespace: '',
   },
   resolve: {
     extensions: ['.ts', '.js'],

@@ -43,10 +43,7 @@ const config: webpack.Configuration & { devServer: WebpackDevServerConfiguration
       exclude: [/node_modules/],
       test: /\.ts($|\?)/i,
     }),
-    new HtmlWebpackPlugin({
-      title: '',
-      template: 'src/assets/index.ejs',
-    }),
+    new HtmlWebpackPlugin(),
   ],
   devServer: {
     compress: true,

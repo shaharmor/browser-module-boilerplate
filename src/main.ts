@@ -1,6 +1,5 @@
 export class Main {
-  // eslint-disable-next-line class-methods-use-this
-  public helloWorld() {
+  public static helloWorld(): string {
     return 'Hello World!';
   }
 }

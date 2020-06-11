@@ -33,6 +33,7 @@ const config: webpack.Configuration & { devServer: WebpackDevServerConfiguration
         loader: 'ts-loader',
         options: {
           configFile: 'tsconfig.build.json',
+          transpileOnly: __DEV__,
         },
       },
     ],

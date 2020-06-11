@@ -48,7 +48,6 @@ const config: webpack.Configuration & { devServer: WebpackDevServerConfiguration
   ],
   devServer: {
     compress: true,
-    port: 9000,
     open: true,
   },
 };

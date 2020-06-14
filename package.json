@@ -24,7 +24,7 @@
     "build": "webpack",
     "clean": "rm -rf ./coverage ./dist",
     "dev": "NODE_ENV=development webpack-dev-server",
-    "lint": "eslint . --fix --max-warnings 0 --ext .js,.ts",
+    "lint": "eslint . --fix --max-warnings 0",
     "prepublish": "npm run build",
     "test": "NODE_ENV=development jest"
   },

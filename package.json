@@ -31,7 +31,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "@shaharmor/commitlint-config": "0.0.2",
-    "@shaharmor/eslint-config": "2.0.5",
+    "@shaharmor/eslint-config": "2.0.6",
     "@shaharmor/prettier-config": "2.0.0",
     "@shaharmor/tsconfig": "0.1.3",
     "@types/html-webpack-plugin": "3.2.3",

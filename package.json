@@ -40,7 +40,7 @@
     "@types/webpack": "4.41.17",
     "@types/webpack-dev-server": "3.11.0",
     "@typescript-eslint/eslint-plugin": "3.4.0",
-    "eslint": "7.3.0",
+    "eslint": "7.3.1",
     "eslint-import-resolver-typescript": "2.0.0",
     "eslint-plugin-import": "2.21.2",
     "eslint-plugin-jest": "23.17.0",

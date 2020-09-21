@@ -49,7 +49,7 @@
     "husky": "4.3.0",
     "jest": "26.4.2",
     "lint-staged": "10.4.0",
-    "merge-options": "3.0.2",
+    "merge-options": "3.0.3",
     "prettier": "2.1.2",
     "sort-package-json": "1.46.0",
     "ts-jest": "26.4.0",

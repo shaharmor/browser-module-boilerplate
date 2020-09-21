@@ -51,7 +51,7 @@
     "lint-staged": "10.4.0",
     "merge-options": "3.0.2",
     "prettier": "2.1.1",
-    "sort-package-json": "1.44.0",
+    "sort-package-json": "1.46.0",
     "ts-jest": "26.4.0",
     "ts-loader": "8.0.4",
     "ts-node": "9.0.0",

@@ -1,3 +1,1 @@
-import { Main } from '@/main';
-
-export = new Main();
+export { hello } from './hello';

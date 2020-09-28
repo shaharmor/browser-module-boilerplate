@@ -41,7 +41,7 @@
     "@types/webpack": "4.41.22",
     "@types/webpack-dev-server": "3.11.0",
     "@typescript-eslint/eslint-plugin": "3.9.1",
-    "eslint": "7.9.0",
+    "eslint": "7.10.0",
     "eslint-import-resolver-typescript": "2.3.0",
     "eslint-plugin-import": "2.22.0",
     "eslint-plugin-jest": "23.20.0",

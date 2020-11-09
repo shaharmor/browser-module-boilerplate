@@ -52,7 +52,7 @@
     "merge-options": "3.0.3",
     "prettier": "2.1.2",
     "sort-package-json": "1.46.1",
-    "ts-jest": "26.4.3",
+    "ts-jest": "26.4.4",
     "ts-loader": "8.0.10",
     "ts-node": "9.0.0",
     "tsconfig-paths": "3.9.0",

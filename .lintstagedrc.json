@@ -1,4 +1,4 @@
 {
-  "*.{js,ts,css,md,json}": "prettier --write",
+  "*.{js,ts,css,yml,md,json}": "prettier --write",
   "package.json": ["sort-package-json"]
 }

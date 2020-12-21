@@ -5,12 +5,11 @@ import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-serv
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 
-// eslint-disable-next-line no-underscore-dangle
-const __DEV__ = process.env.NODE_ENV === 'development';
+const devMode = process.env.NODE_ENV === 'development';
 
 const config: webpack.Configuration & { devServer: WebpackDevServerConfiguration } = {
-  mode: __DEV__ ? 'development' : 'production',
-  devtool: __DEV__ ? 'inline-source-map' : 'hidden-source-map',
+  mode: devMode ? 'development' : 'production',
+  devtool: devMode ? 'inline-source-map' : 'hidden-source-map',
   entry: './src/entry.ts',
   output: {
     filename: 'entry.js',
@@ -34,7 +33,7 @@ const config: webpack.Configuration & { devServer: WebpackDevServerConfiguration
         loader: 'ts-loader',
         options: {
           configFile: 'tsconfig.build.json',
-          transpileOnly: __DEV__,
+          transpileOnly: devMode,
         },
       },
     ],

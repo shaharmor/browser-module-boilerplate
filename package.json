@@ -31,7 +31,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@shaharmor/eslint-config": "7.16.3",
+    "@shaharmor/eslint-config": "7.18.0",
     "@shaharmor/prettier-config": "2.2.0",
     "@shaharmor/tsconfig": "4.1.2",
     "@types/html-webpack-plugin": "3.2.4",
